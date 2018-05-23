@@ -1,17 +1,14 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
 import styled from "styled-components";
 import Calculator from "./components/Calculator";
-class App extends Component {
-  render() {
-    return (
-      <Container>
-        <Calculator />
-      </Container>
-    );
-  }
-}
+
+const App = () => {
+  return (
+    <Container>
+      <Calculator />
+    </Container>
+  );
+};
 
 export default App;
 

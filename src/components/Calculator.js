@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 
 class Calculator extends Component {
   state = {
@@ -27,8 +28,20 @@ class Calculator extends Component {
   }
 
   render() {
-    return <div className="calculator-container" />;
+    return <Container />;
   }
 }
 
 export default Calculator;
+
+const Container = styled.div`
+  background-color: #696969;
+  height: 100%;
+  width: 100%;
+  @media screen and (min-width: 1024px) {
+    height: 72%;
+    width: 36%;
+  }
+`;
+
+Container.displayName = "div";
