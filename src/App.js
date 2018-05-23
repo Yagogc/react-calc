@@ -2,9 +2,14 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import styled from "styled-components";
+import Calculator from "./components/Calculator";
 class App extends Component {
   render() {
-    return <Container>Hello World!</Container>;
+    return (
+      <Container>
+        <Calculator />
+      </Container>
+    );
   }
 }
 
