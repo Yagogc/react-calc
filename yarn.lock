@@ -1775,6 +1775,10 @@ css-loader@0.28.7:
     postcss-value-parser "^3.3.0"
     source-list-map "^2.0.0"
 
+css-mediaquery@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/css-mediaquery/-/css-mediaquery-0.1.2.tgz#6a2c37344928618631c54bd33cedd301da18bea0"
+
 css-select@^1.1.0, css-select@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/css-select/-/css-select-1.2.0.tgz#2b3a110539c5355f1cd8d314623e870b121ec858"
@@ -6679,6 +6683,13 @@ style-loader@0.19.0:
   dependencies:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
+
+styled-components-test-utils@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/styled-components-test-utils/-/styled-components-test-utils-0.4.1.tgz#c0cd53c970fe942e6e3ef5b9cdff6cdf265819e4"
+  dependencies:
+    css "^2.2.1"
+    css-mediaquery "0.1.2"
 
 styled-components@^3.2.6:
   version "3.2.6"
