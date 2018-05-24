@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Display from "./Display";
+import Keypad from "./Keypad";
 
 class Calculator extends Component {
   state = {
@@ -29,10 +30,17 @@ class Calculator extends Component {
   }
 
   render() {
-    const { displayValue } = this.state;
+    const { displayValue, numbers, operators } = this.state;
     return (
       <Container>
         <Display displayValue={displayValue} />
+        <Keypad
+          callOperator={this.callOperator}
+          numbers={numbers}
+          operators={operators}
+          setOperator={this.setOperator}
+          updateDisplay={this.updateDisplay}
+        />
       </Container>
     );
   }
