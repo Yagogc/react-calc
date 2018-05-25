@@ -30,6 +30,10 @@ describe("Keypad", () => {
     ).toEqual("012");
   });
 
+  it("should render an instance of the Key component", () => {
+    expect(wrapper.find("Key").length).toEqual(1);
+  });
+
   it("renders the values of operators", () => {
     wrapper.setProps({ operators: ["+", "-", "*", "/"] });
     expect(
