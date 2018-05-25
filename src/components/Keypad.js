@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 const Keypad = ({
   callOperator,
@@ -8,7 +9,18 @@ const Keypad = ({
   setOperator,
   updateDisplay
 }) => {
-  return <div className="keypad-container" />;
+  numbers = numbers.map(number => {
+    return <p key={number}>{number}</p>;
+  });
+  operators = operators.map(operator => {
+    return <p key={operator}>{operator}</p>;
+  });
+  return (
+    <Container className="keypad-container">
+      <Numbers className="numbers-container">{numbers}</Numbers>
+      <Operators className="operators-container">{operators}</Operators>
+    </Container>
+  );
 };
 
 Keypad.propTypes = {
@@ -20,3 +32,36 @@ Keypad.propTypes = {
 };
 
 export default Keypad;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: var(--keypad-height);
+  padding: 2%;
+  width: var(--keypad-width);
+`;
+Container.displayName = "div";
+
+const Numbers = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 80%;
+  width: 75%;
+`;
+Numbers.displayName = "div";
+
+const Operators = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 25%;
+`;
+Operators.displayName = "div";
+
+const Submit = styled.div`
+  height: 20%;
+  width: 100%;
+`;
+Submit.displayName = "div";
