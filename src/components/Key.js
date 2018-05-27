@@ -4,7 +4,12 @@ import styled from "styled-components";
 
 const Key = ({ keyAction, keyType, keyValue }) => {
   return (
-    <Container className={`key-container ${keyType}`}>
+    <Container
+      className={`key-container ${keyType}`}
+      onClick={() => {
+        keyAction(keyValue);
+      }}
+    >
       <Value className="key-value">{keyValue}</Value>
     </Container>
   );
