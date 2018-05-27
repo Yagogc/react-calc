@@ -123,6 +123,9 @@ const Container = styled.div`
   background-color: #696969;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @media screen and (min-width: 1024px) {
     height: 72%;
     width: 36%;

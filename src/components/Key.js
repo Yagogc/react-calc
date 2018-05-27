@@ -48,7 +48,7 @@ const Container = styled.div`
   }
   &.submit-key {
     background-color: #d18800;
-    height: 100%;
+    height: 20%;
     width: 100%;
     &:hover {
       background-color: #aa6e00;

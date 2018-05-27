@@ -19,7 +19,8 @@ const Container = styled.div`
   display: flex;
   ${"" /* height: 72%;
   padding: 0 4%;
-  width: 36%; */} padding: 4% 4% 0;
+  width: 36%; */} padding: 0 4%;
+  height: 20%;
 `;
 Container.displayName = "div";
 

@@ -55,9 +55,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: var(--keypad-height);
+  height: 80%;
   padding: 2%;
-  width: var(--keypad-width);
+  width: 100%;
 `;
 Container.displayName = "div";
 
