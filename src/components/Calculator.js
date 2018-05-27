@@ -8,9 +8,9 @@ class Calculator extends Component {
     // value to be displayed in <Display />
     displayValue: "0",
     // values to be displayed in number <Keys />
-    numbers: [],
+    numbers: ["0", "1", "2"],
     // values to be displayed in operator <Keys />
-    operators: [],
+    operators: ["+", "-", "/"],
     // operator selected for math operation
     selectedOperator: "",
     // stored value to use for math operation

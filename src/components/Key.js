@@ -27,6 +27,28 @@ const Container = styled.div`
   &:hover {
     cursor: pointer;
   }
+  &.number-key {
+    background-color: #696969;
+    width: calc(100% / 3);
+    &:hover {
+      background-color: #3f3f3f;
+    }
+  }
+  &.operator-key {
+    background-color: #545454;
+    width: 100%;
+    &:hover {
+      background-color: #2a2a2a;
+    }
+  }
+  &.submit-key {
+    background-color: #d18800;
+    height: 100%;
+    width: 100%;
+    &:hover {
+      background-color: #aa6e00;
+    }
+  }
 `;
 Container.displayName = "div";
 

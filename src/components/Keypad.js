@@ -11,16 +11,32 @@ const Keypad = ({
   updateDisplay
 }) => {
   numbers = numbers.map(number => {
-    return <p key={number}>{number}</p>;
+    return (
+      <Key
+        key={number}
+        keyAction={updateDisplay}
+        keyType="number-key"
+        keyValue={number}
+      />
+    );
   });
+
   operators = operators.map(operator => {
-    return <p key={operator}>{operator}</p>;
+    return (
+      <Key
+        key={operator}
+        keyAction={setOperator}
+        keyType="operator-key"
+        keyValue={operator}
+      />
+    );
   });
+
   return (
     <Container className="keypad-container">
       <Numbers className="numbers-container">{numbers}</Numbers>
       <Operators className="operators-container">{operators}</Operators>
-      <Key keyAction={callOperator} keyType="" keyValue="" />
+      <Key keyAction={callOperator} keyType="submit-key" keyValue="=" />
     </Container>
   );
 };
